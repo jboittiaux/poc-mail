@@ -1,0 +1,23 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-section>
+      <mj-column>
+
+        <mj-image width="200px" src="https://s2.qwant.com/thumbr/0x0/d/6/cc35b13ef32c62ed0c4fb8469422e0ab9dfcbc626108903144c1266f20deba/logo.png?u=https%3A%2F%2Fwww.galian.fr%2Fsites%2FGALIAN%2Fthemes%2Fmarketing_theme%2Flogo.png&q=0&b=1&p=0&a=1"></mj-image>
+
+        <mj-divider border-color="#c0d12d"></mj-divider>
+
+        <mj-text font-size="1.5rem" font-weight="bold" color="#888" text-decoration="underline" align="center">
+          Ici une variable -> {{ foo }}
+        </mj-text>
+
+        <mj-text font-size="20px" color="#555" font-family="helvetica" align="center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porta tincidunt condimentum. Nam ullamcorper efficitur mauris, quis luctus nunc consequat quis. Ut sit amet purus in justo eleifend convallis. In gravida ullamcorper leo et pellentesque.
+          Sed lectus nisi, bibendum non leo eget, commodo pulvinar mauris. Pellentesque condimentum eu nibh a porttitor. Morbi rutrum nulla id maximus varius. Duis tempor, mauris euismod mattis dictum, tellus sapien placerat massa, at suscipit metus ante
+          vel quam. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean finibus imperdiet urna, at fermentum est maximus eget.
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
