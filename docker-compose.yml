@@ -1,0 +1,43 @@
+version: "2"
+services:
+
+  app:
+    image: poc-mail-app
+    build: ./app
+    env_file: .env
+    volumes:
+      - ./app:/var/www/html
+
+  web:
+    image: nginx:1.17-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./app:/var/www/html
+    links:
+      - app
+
+  rabbit:
+    image: rabbitmq:management
+    ports:
+      - "2071:15671"
+      - "2072:15672"
+    env_file: .env
+
+  mjml:
+    # image: poc-mail-mjml:0.3
+    build: ./mjml
+    ports:
+      - "3000:3000"
+
+  # sender:
+  #   image: poc-mail-php
+  #   build: ./sender
+  #   env_file: .env
+
+  maildev:
+    image: djfarrelly/maildev
+    ports:
+      - "2080:80"
+      - "2025:25"
